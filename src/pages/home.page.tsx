@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+import { Header } from "../components/header/header.component";
 import { IProductDetail } from "../interfaces/products.interface";
 import { IconsList } from "../UI/icons/icons-list";
 import { SVGIcon } from "../UI/components/icons/icon.component";
@@ -23,9 +24,10 @@ export const HomePage = () => {
 
   return (
     <>
-      asd
-      <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" />
-      {isLoading ? (
+      <Header/>
+      {/* asd */}
+      {/* <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" /> */}
+      {/* {isLoading ? (
         <>Loading...</>
       ) : products.length > 0 ? (
         products.map((item: IProductDetail) => (
@@ -36,7 +38,7 @@ export const HomePage = () => {
         ))
       ) : (
         <>No products foubs</>
-      )}
+      )} */}
     </>
   );
 };
