@@ -1,0 +1,42 @@
+.header-component-bg {
+  /* CHANGE / FIX */
+  background-color: #22d3ee;
+  height: 56px;
+  max-width: 100%;
+  overflow-x: hidden;
+  /* CHANGE / FIX */
+  border-bottom: 1px solid #d1d5db;
+}
+.header-component-container {
+  height: 100%;
+  padding: 0 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-component-left {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+.header-component-left--logo,
+.header-component-left--logo img {
+  height: 36px;
+}
+.header-component-right {
+  display: flex;
+  align-items: center;
+}
+.header-component-right--shopping-cart {
+  margin-right: 8px;
+}
+
+@media (min-width: 768px){
+    
+}
+@media (min-width: 1024px){
+    
+}
+@media (min-width: 1440px){
+    
+}
