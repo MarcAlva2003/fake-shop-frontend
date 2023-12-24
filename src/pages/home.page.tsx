@@ -13,7 +13,6 @@ export const HomePage = () => {
   const data = async () => {
     setIsLoading(true);
     const asd = await getAllProducts();
-    console.log({ asd });
     setIsLoading(false);
     setProducts(asd);
   };
