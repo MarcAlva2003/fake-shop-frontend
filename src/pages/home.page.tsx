@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Header } from "../components/header/header.component";
 import { IProductDetail } from "../interfaces/products.interface";
 import { IconsList } from "../UI/icons/icons-list";
+import { Input } from "../UI/components/input/input.component";
 import { SVGIcon } from "../UI/components/icons/icon.component";
 import { getAllProducts } from "../services/products/products.service";
 
@@ -21,12 +22,35 @@ export const HomePage = () => {
     data();
   }, []);
 
+  const [value, setValue] = useState<string>("");
+
   return (
     <>
+      <Input
+        value={value}
+        onChange={(ev: React.ChangeEvent<HTMLInputElement>) => {
+          setValue(ev.target.value);
+        }}
+        size="large"
+      />
+      <Input
+        value={value}
+        onChange={(ev: React.ChangeEvent<HTMLInputElement>) => {
+          setValue(ev.target.value);
+        }}
+        size="medium"
+      />
+      <Input
+        value={value}
+        onChange={(ev: React.ChangeEvent<HTMLInputElement>) => {
+          setValue(ev.target.value);
+        }}
+        size="small"
+      />
+      asd
+      <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" />
       <Header/>
-      {/* asd */}
-      {/* <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" /> */}
-      {/* {isLoading ? (
+      {isLoading ? (
         <>Loading...</>
       ) : products.length > 0 ? (
         products.map((item: IProductDetail) => (
@@ -37,7 +61,7 @@ export const HomePage = () => {
         ))
       ) : (
         <>No products foubs</>
-      )} */}
+      )}
     </>
   );
 };
