@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 
+import { Header } from "../components/header/header.component";
 import { IProductDetail } from "../interfaces/products.interface";
 import { IconsList } from "../UI/icons/icons-list";
 import { Input } from "../UI/components/input/input.component";
@@ -13,7 +14,6 @@ export const HomePage = () => {
   const data = async () => {
     setIsLoading(true);
     const asd = await getAllProducts();
-    console.log({ asd });
     setIsLoading(false);
     setProducts(asd);
   };
@@ -49,6 +49,7 @@ export const HomePage = () => {
       />
       asd
       <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" />
+      <Header/>
       {isLoading ? (
         <>Loading...</>
       ) : products.length > 0 ? (

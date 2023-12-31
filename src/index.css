@@ -175,8 +175,20 @@ input[type="number"] {
 }
 @font-face {
   font-family: Montserrat;
-  src: url('./fonts/montserrat/Montserrat-Regular.ttf');
+  src: url("./fonts/montserrat/Montserrat-Regular.ttf");
 }
 body * {
   font-family: Montserrat;
+}
+button {
+  -webkit-appearance: none;
+  border-radius: 0;
+  text-align: inherit;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  color: inherit;
+  font: inherit;
 }

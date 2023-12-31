@@ -1,0 +1,33 @@
+.header-mobile-nav-component {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+
+  .header-mobile-nav-bg {
+    position: fixed;
+    height: calc(100vh - 56px);
+    width: 100%;
+    top: 56px;
+    left: 0;
+    background-color: #00000080;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .header-mobile-nav-list {
+    position: fixed;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    /* CHANGE/FIX */
+    background-color: #f9fafb;
+  }
+}
+
+.header-mobile-nav-component-open {
+  visibility: visible;
+  opacity: 1;
+  .header-mobile-nav-bg {
+    opacity: 1;
+  }
+}
