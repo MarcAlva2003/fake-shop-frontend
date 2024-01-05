@@ -26,6 +26,7 @@ export const HomePage = () => {
 
   return (
     <>
+      <Header/>
       <Input
         value={value}
         onChange={(ev: React.ChangeEvent<HTMLInputElement>) => {
@@ -49,7 +50,6 @@ export const HomePage = () => {
       />
       asd
       <SVGIcon icon={IconsList.actions.closeRoundFill} size="40px" />
-      <Header/>
       {isLoading ? (
         <>Loading...</>
       ) : products.length > 0 ? (
